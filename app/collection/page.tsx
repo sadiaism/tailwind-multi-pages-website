@@ -1,49 +1,68 @@
 "use client"
 import React from 'react'
 import Image from 'next/image'
-import Header from '../components/Header'
+
 
 const page = () => {
-  return (<section>
-    <Header/>
-    <div className='bg-gradient-to-r from-blue-300 to-pink-300 h-screen'>
+  return (
+    
+    <div className='bg-gradient-to-r from-blue-300 to-pink-300 mobile:flex-col' >
         <h1 className='flex justify-center text-2xl font-bold pt-12'>Designed and stiched by Sadia</h1>
-        <div className='flex flex-col justify-center items-center gap-12 pt-24'>
+        <div className='flex justify-center items-center gap-10 pt-24 mobile:flex-col'>
             <Image
             src={"/images/frock1.jpeg"}
             alt="frock"
-            width={500}
-            height={500}/>
+            width={350}
+            height={210}/>
             <Image
             src={"/images/frock2.jpeg"}
             alt="frock"
-            width={500}
-            height={500}/>
+            width={350}
+            height={210}/>
             <Image
-            src={"/images/frock5.jpeg"}
+            src={"/images/design4-pic.jpeg"}
             alt="frock"
-            width={500}
-            height={500}/>
+            width={350}
+            height={210}/></div>
+
+        <div className='flex justify-center items-center gap-12 pt-24 mobile:flex-col'>
             <Image
             src={"/images/frock3.jpeg"}
             alt="frock"
-            width={500}
-            height={500}/>
+            width={350}
+            height={210}/>
             <Image
             src={"/images/frock6.jpeg"}
             alt="frock"
-            width={500}
-            height={500}/>
+            width={350}
+            height={210}/>
             <Image
             src={"/images/frock7.jpeg"}
             alt="frock"
-            width={500}
-            height={500}/>
+            width={350}
+            height={210}/></div>
+
+          <div className='flex justify-center items-center gap-12 pt-24 mobile:flex-col'>
+            <Image
+            src={"/images/design1-pic.jpeg"}
+            alt="frock"
+            width={350}
+            height={210}/>
+            <Image
+            src={"/images/frock5.jpeg"}
+            alt="frock"
+            width={350}
+            height={210}/>
+            <Image
+            src={"/images/frock8.jpeg"}
+            alt="frock"
+            width={350}
+            height={210}/>
         </div>
         
       
     </div>
-    </section>
+    
   )
 }
 

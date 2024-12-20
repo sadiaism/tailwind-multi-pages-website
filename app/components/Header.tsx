@@ -1,3 +1,4 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
 import { useState } from 'react'
@@ -10,10 +11,7 @@ const Header = () => {
         setIsMenuOpen(!isMenuOpen)
      }
     
-
-
-
-  return (
+    return (
     <div className='flex justify-between items-center bg-gradient-to-r from-blue-200 to-pink-200 p-11'>
         
         <h1 className='text-2xl font-bold'>Kids Collection By Sadia Alamdaar</h1>
@@ -22,8 +20,8 @@ const Header = () => {
       
 
         {/* navbar desktop */}
-        <nav className='flex gap-10 text-2xl mobile:hidden'>
-            <Link href="./home" className='hover:text-blue-500' target="_blank" >Home</Link>
+        <nav className='flex gap-10 mobile:hidden'>
+            <Link href="./" className='hover:text-blue-500'>Home</Link>
             <Link href="./about"  className='hover:text-blue-500'target="_blank">About</Link>
             <Link href="./collection" className='hover:text-blue-500' target="_blank">Collection</Link>
             <Link href="./contact" className='hover:text-blue-500' target="_blank">Contact</Link>

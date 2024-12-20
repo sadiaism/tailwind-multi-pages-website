@@ -4,8 +4,8 @@ import Header from '../components/Header'
 
 const page = () => {
   return (
-    <section>
-      <Header/>
+    
+    
     <div className='flex flex-col items-center gap-4 h-screen bg-gradient-to-r from-blue-300 to-pink-300 p-24'>
         <h1 className='flex justify-center pb- text-2xl font-bold'>Contact For Me</h1>
        
@@ -31,7 +31,7 @@ const page = () => {
 
       
     </div>
-    </section>
+    
   )
 }
 
